@@ -12,55 +12,55 @@ const menus = [
   {
     title: "Modern Wisconsin",
     courses: [
-      { label: "STARTER", item: "Jumbo Lump Crab Cake", description: "- Corn Succotash, Lemon Dill Remoulade" },
-      { label: "FIRST COURSE", item: "Roasted Butternut Squash Soup", description: "- Brown Butter, Sage, Pepitas" },
-      { label: "MAIN COURSE", item: "Filet Mignon", description: "- Garlic Whipped Potatoes, Seasonal Vegetables, Red Wine Demi-Glace" },
-      { label: "DESSERT", item: "Brandy Old Fashioned Crème Brûlée" },
+      { label: "Starter", item: "Jumbo Lump Crab Cake", description: "Corn Succotash, Lemon Dill Remoulade" },
+      { label: "First Course", item: "Roasted Butternut Squash Soup", description: "Brown Butter, Sage, Pepitas" },
+      { label: "Main Course", item: "Filet Mignon", description: "Garlic Whipped Potatoes, Seasonal Vegetables, Red Wine Demi-Glace" },
+      { label: "Dessert", item: "Brandy Old Fashioned Crème Brûlée" },
     ],
   },
   {
     title: "Italian Inspired",
     courses: [
-      { label: "STARTER", item: "Burrata", description: "- Roasted Tomatoes, Basil Oil, Crostini" },
-      { label: "FIRST COURSE", item: "Lobster Ravioli", description: "- Cognac Cream, Chives" },
-      { label: "MAIN COURSE", item: "Chicken Marsala", description: "- Wild Mushrooms, Herb Cream Sauce" },
-      { label: "DESSERT", item: "Tiramisu" },
+      { label: "Starter", item: "Burrata", description: "Roasted Tomatoes, Basil Oil, Crostini" },
+      { label: "First Course", item: "Lobster Ravioli", description: "Cognac Cream, Chives" },
+      { label: "Main Course", item: "Chicken Marsala", description: "Wild Mushrooms, Herb Cream Sauce" },
+      { label: "Dessert", item: "Tiramisu" },
     ],
   },
   {
     title: "French Countryside",
     courses: [
-      { label: "STARTER", item: "French Onion Soup", description: "- Gruyère Crostini" },
-      { label: "FIRST COURSE", item: "Warm Goat Cheese Salad", description: "- Honey, Walnuts, Baby Greens" },
-      { label: "MAIN COURSE", item: "Duck Breast", description: "- Potato Purée, Cherry Gastrique, Roasted Root Vegetables" },
-      { label: "DESSERT", item: "Vanilla Bean Pot de Crème" },
+      { label: "Starter", item: "French Onion Soup", description: "Gruyère Crostini" },
+      { label: "First Course", item: "Warm Goat Cheese Salad", description: "Honey, Walnuts, Baby Greens" },
+      { label: "Main Course", item: "Duck Breast", description: "Potato Purée, Cherry Gastrique, Roasted Root Vegetables" },
+      { label: "Dessert", item: "Vanilla Bean Pot de Crème" },
     ],
   },
   {
     title: "Steak & Seafood",
     courses: [
-      { label: "STARTER", item: "Seared Scallops", description: "- English Pea Purée, Crispy Pancetta" },
-      { label: "FIRST COURSE", item: "Truffle Cauliflower Velouté", description: "- Chive Oil, Crème Fraîche" },
-      { label: "MAIN COURSE", item: "Prime Beef Tenderloin", description: "- Potato Purée, Asparagus, Red Wine Reduction" },
-      { label: "DESSERT", item: "Chocolate Espresso Torte" },
+      { label: "Starter", item: "Seared Scallops", description: "English Pea Purée, Crispy Pancetta" },
+      { label: "First Course", item: "Truffle Cauliflower Velouté", description: "Chive Oil, Crème Fraîche" },
+      { label: "Main Course", item: "Prime Beef Tenderloin", description: "Potato Purée, Asparagus, Red Wine Reduction" },
+      { label: "Dessert", item: "Chocolate Espresso Torte" },
     ],
   },
   {
     title: "Romantic Date Night",
     courses: [
-      { label: "STARTER", item: "Tuna Tartare", description: "Citrus, Avocado, Sesame Crisp" },
-      { label: "FIRST COURSE", item: "Lobster Bisque", description: "Chive Oil, Crème Fraîche" },
-      { label: "MAIN COURSE", item: "Miso Glazed Chilean Sea Bass", description: "Jasmine Rice, Bok Choy" },
-      { label: "DESSERT", item: "Dark Chocolate Lava Cake" },
+      { label: "Starter", item: "Tuna Tartare", description: "Citrus, Avocado, Sesame Crisp" },
+      { label: "First Course", item: "Lobster Bisque", description: "Chive Oil, Crème Fraîche" },
+      { label: "Main Course", item: "Miso Glazed Chilean Sea Bass", description: "Jasmine Rice, Bok Choy" },
+      { label: "Dessert", item: "Dark Chocolate Lava Cake" },
     ],
   },
   {
     title: "Latin American",
     courses: [
-      { label: "STARTER", item: "Ahi Tuna Ceviche", description: "Lime, Cilantro, Pickled Red Onion" },
-      { label: "FIRST COURSE", item: "Street Corn Soup", description: "Cotija Cheese, Chili Oil" },
-      { label: "MAIN COURSE", item: "Carne Asada", description: "Chimichurri, Charred Street Corn, Black Bean Purée" },
-      { label: "DESSERT", item: "Tres Leches Cake" },
+      { label: "Starter", item: "Ahi Tuna Ceviche", description: "Lime, Cilantro, Pickled Red Onion" },
+      { label: "First Course", item: "Street Corn Soup", description: "Cotija Cheese, Chili Oil" },
+      { label: "Main Course", item: "Carne Asada", description: "Chimichurri, Charred Street Corn, Black Bean Purée" },
+      { label: "Dessert", item: "Tres Leches Cake" },
     ],
   },
 ];
@@ -83,7 +83,7 @@ function MenuCard({ menu }) {
         {menu.courses.map((course) => (
           <div className="course" key={`${menu.title}-${course.label}`}>
             <p className="course-label">{course.label}</p>
-            <p className="menu-item"><span className="bullet"></span>{course.item}</p>
+            <p className="menu-item"><span className="bullet">•</span>{course.item}</p>
             {course.description && <p className="description">{course.description}</p>}
           </div>
         ))}
@@ -144,6 +144,62 @@ export default function App() {
           {menus.map((menu) => <MenuCard key={menu.title} menu={menu} />)}
         </div>
       </section>
+
+
+      <section className="custom-menu-note section-wrap">
+        <p>
+          Menus are starting points only. Every private dining experience can be customized around
+          guest preferences, seasonal ingredients, allergies, dietary needs, and the style of event.
+          Clients may swap courses, adjust ingredients, or build a completely custom menu with Chef Jimmy.
+        </p>
+      </section>
+
+
+
+      <section className="meal-prep-section section-wrap" id="meal-prep">
+        <div className="meal-prep-copy">
+          <p className="eyebrow">In-Home Meal Prep</p>
+          <h2>Weekly meals prepared in your kitchen.</h2>
+          <p>
+            The Hosting Table Co. also offers in-home meal preparation for busy families,
+            professionals, new parents, and anyone who wants chef-prepared meals ready for the week.
+          </p>
+          <p>
+            Chef Jimmy can cook in your home, package meals for easy reheating, label everything clearly,
+            and leave your kitchen cleaned up before leaving.
+          </p>
+          <p className="postpartum-note">
+            Postpartum and new parent services are available, with nourishing comfort-focused meals,
+            freezer-friendly options, and flexible menus built around family preferences.
+          </p>
+        </div>
+
+        <div className="meal-prep-cards">
+          <article>
+            <h3>3 Meals / Week</h3>
+            <p className="price">Starting at $225–$325</p>
+            <p>Great for light weekly support, lunches, or a few ready-to-heat dinners.</p>
+          </article>
+
+          <article>
+            <h3>4 Meals / Week</h3>
+            <p className="price">Starting at $300–$425</p>
+            <p>Ideal for couples, small families, or anyone wanting more consistent weekly coverage.</p>
+          </article>
+
+          <article>
+            <h3>5 Meals / Week</h3>
+            <p className="price">Starting at $375–$550</p>
+            <p>Best for full weekly meal support, postpartum care, or busy family schedules.</p>
+          </article>
+
+          <p className="meal-prep-disclaimer">
+            Pricing varies by portions, dietary needs, groceries, travel, packaging, and menu complexity.
+            Grocery cost is separate unless quoted otherwise.
+          </p>
+        </div>
+      </section>
+
 
       <section className="gallery-section">
         <div className="section-wrap gallery-heading">
@@ -265,6 +321,8 @@ export default function App() {
               <option>Corporate / executive dining</option>
               <option>Vacation rental / Airbnb dinner</option>
               <option>Brunch or breakfast experience</option>
+              <option>In-home meal prep</option>
+              <option>Postpartum meal support</option>
             </select>
           </label>
 

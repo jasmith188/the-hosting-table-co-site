@@ -522,3 +522,103 @@ footer p {
     gap: 0;
   }
 }
+
+.custom-menu-note {
+  margin: -22px auto 48px;
+  border: 1.4px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 20px 24px;
+  box-shadow: 0 14px 40px rgba(120, 84, 40, 0.06);
+}
+
+.custom-menu-note p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.04rem;
+  text-align: center;
+}
+
+.meal-prep-section {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 42px;
+  align-items: start;
+  padding: 56px 0 60px;
+  border-top: 1.5px solid var(--line);
+}
+
+.meal-prep-copy h2 {
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.meal-prep-copy p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.04rem;
+}
+
+.postpartum-note {
+  border-left: 3px solid var(--gold);
+  padding-left: 16px;
+  font-style: italic;
+}
+
+.meal-prep-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.meal-prep-cards article {
+  background: var(--card);
+  border: 1.4px solid var(--line);
+  border-radius: 12px;
+  padding: 22px 18px;
+  box-shadow: 0 16px 45px rgba(120, 84, 40, 0.08);
+}
+
+.meal-prep-cards h3 {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 1rem;
+}
+
+.meal-prep-cards .price {
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 1.08rem;
+  margin: 0 0 12px;
+}
+
+.meal-prep-cards article p:last-child {
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.meal-prep-disclaimer {
+  grid-column: 1 / -1;
+  margin: 4px 0 0;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 920px) {
+  .meal-prep-section {
+    grid-template-columns: 1fr;
+  }
+
+  .meal-prep-cards {
+    grid-template-columns: 1fr;
+  }
+}
