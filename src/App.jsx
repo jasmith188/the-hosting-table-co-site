@@ -71,7 +71,7 @@ const gallery = [
   { src: lobsterRavioli, title: "Lobster Ravioli" },
   { src: mushroomPasta, title: "Mushroom Pasta" },
   { src: scallops, title: "Seared Scallops" },
-  { src: steak, title: "Duck Breast" },
+  { src: steak, title: "Duck Breast / Steakhouse Style Plate" },
   { src: asianChopstick, title: "Asian Inspired Rice Bowl" },
 ];
 
@@ -97,11 +97,7 @@ export default function App() {
     <main>
       <section className="hero">
         <div className="brand-row">
-          <img
-  src="/the-hosting-table-co-dijon-logo.png"
-  alt="The Hosting Table Co."
-  className="hero-logo"
-/>
+          <img src="/the-hosting-table-co-dijon-logo.png" alt="The Hosting Table Co. logo" className="hero-logo" />
           <h1>The Hosting Table Co.</h1>
         </div>
 
@@ -120,7 +116,7 @@ export default function App() {
         <div className="quick-links">
           <a href="https://thehostingtableco.com"><Globe size={16} /> thehostingtableco.com</a>
           <a href="https://www.takeachef.com/en-us/chef/jimmy-smith">Take a Chef Profile</a>
-          <a href="mailto:chefjimmy@thehostingtableco.com"><Mail size={16} /> chefjimmy@thehostingtableco.com</a>
+          <a href="#contact"><Mail size={16} /> Start an inquiry</a>
         </div>
       </section>
 
@@ -200,6 +196,92 @@ export default function App() {
           <p className="fine-print">Premium ingredients, travel, rentals, and staffing quoted separately when applicable.</p>
         </div>
       </section>
+
+
+      <section className="contact-section section-wrap" id="contact">
+        <div className="contact-copy">
+          <p className="eyebrow">Inquire</p>
+          <h2>Plan your private dining experience.</h2>
+          <p>
+            Share your event date, guest count, location, and the style of dinner you have in mind.
+            Chef Jimmy will follow up directly to customize the menu and quote.
+          </p>
+        </div>
+
+        <form
+          name="private-dining-inquiry"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          className="contact-form"
+        >
+          <input type="hidden" name="form-name" value="private-dining-inquiry" />
+
+          <p className="hidden-field">
+            <label>
+              Do not fill this out: <input name="bot-field" />
+            </label>
+          </p>
+
+          <div className="form-grid">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="Your phone number" />
+            </label>
+
+            <label>
+              Event Date
+              <input type="date" name="event-date" />
+            </label>
+
+            <label>
+              Guest Count
+              <input type="number" name="guest-count" min="1" placeholder="Number of guests" />
+            </label>
+
+            <label>
+              Location
+              <input type="text" name="location" placeholder="City / venue / Airbnb" />
+            </label>
+          </div>
+
+          <label>
+            Dining Style
+            <select name="dining-style" defaultValue="">
+              <option value="" disabled>Select one</option>
+              <option>Multi-course plated dinner</option>
+              <option>Family-style gathering</option>
+              <option>Romantic date night</option>
+              <option>Corporate / executive dining</option>
+              <option>Vacation rental / Airbnb dinner</option>
+              <option>Brunch or breakfast experience</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Tell me about the occasion, menu preferences, allergies, timing, and anything else I should know."
+              required
+            ></textarea>
+          </label>
+
+          <button type="submit">Submit Inquiry</button>
+        </form>
+      </section>
+
 
       <footer>
         <p className="footer-brand">The Hosting Table Co.</p>
