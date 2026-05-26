@@ -12,55 +12,55 @@ const menus = [
   {
     title: "Modern Wisconsin",
     courses: [
-      { label: "Starter", item: "Jumbo Lump Crab Cake", description: "Corn Succotash, Lemon Dill Remoulade" },
-      { label: "First Course", item: "Roasted Butternut Squash Soup", description: "Brown Butter, Sage, Pepitas" },
-      { label: "Main Course", item: "Filet Mignon", description: "Garlic Whipped Potatoes, Seasonal Vegetables, Red Wine Demi-Glace" },
-      { label: "Dessert", item: "Brandy Old Fashioned Crème Brûlée" },
+      { label: "STARTER", item: "Jumbo Lump Crab Cake", description: "- Corn Succotash, Lemon Dill Remoulade" },
+      { label: "FIRST COURSE", item: "Roasted Butternut Squash Soup", description: "- Brown Butter, Sage, Pepitas" },
+      { label: "MAIN COURSE", item: "Filet Mignon", description: "- Garlic Whipped Potatoes, Seasonal Vegetables, Red Wine Demi-Glace" },
+      { label: "DESSERT", item: "Brandy Old Fashioned Crème Brûlée" },
     ],
   },
   {
     title: "Italian Inspired",
     courses: [
-      { label: "Starter", item: "Burrata", description: "Roasted Tomatoes, Basil Oil, Crostini" },
-      { label: "First Course", item: "Lobster Ravioli", description: "Cognac Cream, Chives" },
-      { label: "Main Course", item: "Chicken Marsala", description: "Wild Mushrooms, Herb Cream Sauce" },
-      { label: "Dessert", item: "Tiramisu" },
+      { label: "STARTER", item: "Burrata", description: "- Roasted Tomatoes, Basil Oil, Crostini" },
+      { label: "FIRST COURSE", item: "Lobster Ravioli", description: "- Cognac Cream, Chives" },
+      { label: "MAIN COURSE", item: "Chicken Marsala", description: "- Wild Mushrooms, Herb Cream Sauce" },
+      { label: "DESSERT", item: "Tiramisu" },
     ],
   },
   {
     title: "French Countryside",
     courses: [
-      { label: "Starter", item: "French Onion Soup", description: "Gruyère Crostini" },
-      { label: "First Course", item: "Warm Goat Cheese Salad", description: "Honey, Walnuts, Baby Greens" },
-      { label: "Main Course", item: "Duck Breast", description: "Potato Purée, Cherry Gastrique, Roasted Root Vegetables" },
-      { label: "Dessert", item: "Vanilla Bean Pot de Crème" },
+      { label: "STARTER", item: "French Onion Soup", description: "- Gruyère Crostini" },
+      { label: "FIRST COURSE", item: "Warm Goat Cheese Salad", description: "- Honey, Walnuts, Baby Greens" },
+      { label: "MAIN COURSE", item: "Duck Breast", description: "- Potato Purée, Cherry Gastrique, Roasted Root Vegetables" },
+      { label: "DESSERT", item: "Vanilla Bean Pot de Crème" },
     ],
   },
   {
     title: "Steak & Seafood",
     courses: [
-      { label: "Starter", item: "Seared Scallops", description: "English Pea Purée, Crispy Pancetta" },
-      { label: "First Course", item: "Truffle Cauliflower Velouté", description: "Chive Oil, Crème Fraîche" },
-      { label: "Main Course", item: "Prime Beef Tenderloin", description: "Potato Purée, Asparagus, Red Wine Reduction" },
-      { label: "Dessert", item: "Chocolate Espresso Torte" },
+      { label: "STARTER", item: "Seared Scallops", description: "- English Pea Purée, Crispy Pancetta" },
+      { label: "FIRST COURSE", item: "Truffle Cauliflower Velouté", description: "- Chive Oil, Crème Fraîche" },
+      { label: "MAIN COURSE", item: "Prime Beef Tenderloin", description: "- Potato Purée, Asparagus, Red Wine Reduction" },
+      { label: "DESSERT", item: "Chocolate Espresso Torte" },
     ],
   },
   {
     title: "Romantic Date Night",
     courses: [
-      { label: "Starter", item: "Tuna Tartare", description: "Citrus, Avocado, Sesame Crisp" },
-      { label: "First Course", item: "Lobster Bisque", description: "Chive Oil, Crème Fraîche" },
-      { label: "Main Course", item: "Miso Glazed Chilean Sea Bass", description: "Jasmine Rice, Bok Choy" },
-      { label: "Dessert", item: "Dark Chocolate Lava Cake" },
+      { label: "STARTER", item: "Tuna Tartare", description: "Citrus, Avocado, Sesame Crisp" },
+      { label: "FIRST COURSE", item: "Lobster Bisque", description: "Chive Oil, Crème Fraîche" },
+      { label: "MAIN COURSE", item: "Miso Glazed Chilean Sea Bass", description: "Jasmine Rice, Bok Choy" },
+      { label: "DESSERT", item: "Dark Chocolate Lava Cake" },
     ],
   },
   {
     title: "Latin American",
     courses: [
-      { label: "Starter", item: "Ahi Tuna Ceviche", description: "Lime, Cilantro, Pickled Red Onion" },
-      { label: "First Course", item: "Street Corn Soup", description: "Cotija Cheese, Chili Oil" },
-      { label: "Main Course", item: "Carne Asada", description: "Chimichurri, Charred Street Corn, Black Bean Purée" },
-      { label: "Dessert", item: "Tres Leches Cake" },
+      { label: "STARTER", item: "Ahi Tuna Ceviche", description: "Lime, Cilantro, Pickled Red Onion" },
+      { label: "FIRST COURSE", item: "Street Corn Soup", description: "Cotija Cheese, Chili Oil" },
+      { label: "MAIN COURSE", item: "Carne Asada", description: "Chimichurri, Charred Street Corn, Black Bean Purée" },
+      { label: "DESSERT", item: "Tres Leches Cake" },
     ],
   },
 ];
@@ -83,7 +83,7 @@ function MenuCard({ menu }) {
         {menu.courses.map((course) => (
           <div className="course" key={`${menu.title}-${course.label}`}>
             <p className="course-label">{course.label}</p>
-            <p className="menu-item"><span className="bullet">•</span>{course.item}</p>
+            <p className="menu-item"><span className="bullet"></span>{course.item}</p>
             {course.description && <p className="description">{course.description}</p>}
           </div>
         ))}

@@ -213,7 +213,7 @@ h1 {
   display: flex;
   gap: 9px;
   align-items: flex-start;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .bullet {
