@@ -389,10 +389,10 @@ footer p {
 }
 
 .hero-logo {
-  width: 130px;
+  width: 200px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 @media (max-width: 768px) {
