@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --ink: #111111;
+  --muted: #55504a;
+  --soft: #f7f4ef;
+  --card: #ffffff;
+  --gold: #b7843d;
+  --gold-soft: #d9c09a;
+  --line: rgba(183, 132, 61, 0.68);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', system-ui, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top, rgba(183, 132, 61, 0.08), transparent 34rem),
+    linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  overflow: hidden;
+}
+
+.section-wrap {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.hero {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 44px 0 34px;
+  text-align: center;
+}
+
+.brand-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.logo-mark {
+  width: 94px;
+  height: 94px;
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 48px;
+  letter-spacing: -8px;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 7vw, 5.7rem);
+  line-height: 0.94;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.gold-divider {
+  margin: 22px auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: var(--gold);
+}
+
+.gold-divider span {
+  display: block;
+  width: min(190px, 27vw);
+  height: 2px;
+  background: var(--gold);
+}
+
+.gold-divider small {
+  font-size: 25px;
+}
+
+.hero h2,
+.gallery-heading h2,
+.about-copy h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+
+.hero h2 {
+  font-size: clamp(1.55rem, 3.8vw, 2.35rem);
+  margin: 0;
+}
+
+.tagline {
+  max-width: 650px;
+  margin: 12px auto 22px;
+  font-style: italic;
+  font-size: 1.07rem;
+  line-height: 1.55;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.quick-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 44px;
+  align-items: center;
+  padding: 34px 0 44px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.about-copy h2,
+.gallery-heading h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  letter-spacing: 0.07em;
+  line-height: 1.15;
+}
+
+.about-copy p:not(.eyebrow) {
+  font-size: 1.08rem;
+  line-height: 1.78;
+  color: #282522;
+}
+
+.chef-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 999px 999px 28px 28px;
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
+}
+
+.menus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px 28px;
+  padding-bottom: 48px;
+}
+
+.menu-card {
+  background: var(--card);
+  border: 1.4px solid var(--line);
+  border-radius: 7px;
+  padding: 22px 18px 20px;
+  min-height: 355px;
+  box-shadow: 0 14px 40px rgba(120, 84, 40, 0.07);
+}
+
+.menu-card h3 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin: 0 0 20px;
+}
+
+.course {
+  margin-bottom: 15px;
+}
+
+.course-label {
+  margin: 0 0 5px;
+  font-weight: 700;
+}
+
+.menu-item {
+  margin: 0;
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  font-weight: 500;
+}
+
+.bullet {
+  color: #000;
+  line-height: 1.15;
+}
+
+.description {
+  margin: 3px 0 0 20px;
+  color: #252525;
+  line-height: 1.35;
+}
+
+.gallery-section {
+  padding: 54px 0;
+  background: #12100e;
+  color: white;
+}
+
+.gallery-heading {
+  margin-bottom: 24px;
+}
+
+.gallery-heading .eyebrow {
+  color: var(--gold-soft);
+}
+
+.gallery-track {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding: 0 max(20px, calc((100vw - 1120px) / 2)) 18px;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-track::-webkit-scrollbar {
+  height: 10px;
+}
+
+.gallery-track::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 20px;
+}
+
+.gallery-card {
+  flex: 0 0 min(360px, 82vw);
+  margin: 0;
+  scroll-snap-align: start;
+  background: #1c1916;
+  border: 1px solid rgba(217, 192, 154, 0.35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-card figcaption {
+  padding: 14px 16px 17px;
+  color: #f5efe7;
+  font-size: 0.98rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  padding: 54px 0 42px;
+}
+
+.details > div {
+  border-left: 1px solid var(--line);
+  padding-left: 24px;
+}
+
+.detail-icon {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.details h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 1.2rem;
+  margin: 0 0 14px;
+}
+
+.details ul,
+.details ol {
+  margin: 0;
+  padding-left: 19px;
+  line-height: 1.75;
+}
+
+.fine-print {
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+footer {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 42px;
+  text-align: center;
+  border-top: 1.5px solid var(--line);
+  color: var(--muted);
+}
+
+.footer-brand {
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+@media (max-width: 920px) {
+  .about,
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  .chef-photo {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .menus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 30px;
+  }
+
+  .logo-mark {
+    width: 76px;
+    height: 76px;
+    font-size: 39px;
+  }
+
+  .menus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card {
+    min-height: auto;
+  }
+
+  .quick-links {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .about {
+    gap: 28px;
+  }
+}
+
+.hero-logo {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 95px;
+  }
+}
