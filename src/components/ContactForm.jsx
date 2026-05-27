@@ -13,10 +13,24 @@ export default function ContactForm() {
       <form
   name="private-dining-inquiry"
   method="POST"
-  action="/success.html"
   data-netlify="true"
   netlify-honeypot="bot-field"
   className="contact-form"
+  onSubmit={async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+
+    alert("Thank you! Your inquiry was sent.");
+    form.reset();
+  }}
 >
         <input type="hidden" name="form-name" value="private-dining-inquiry" />
 
