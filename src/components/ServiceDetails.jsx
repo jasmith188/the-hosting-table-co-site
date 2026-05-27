@@ -34,8 +34,8 @@ export default function ServiceDetails() {
         <DollarSign className="detail-icon" />
         <h3>Typical Pricing</h3>
         <ul>
-          <li>Intimate multi-course dinners: $95–$175+ per guest</li>
-          <li>Family-style gatherings: $65–$120 per guest</li>
+          <li>Intimate multi-course dinners: $162–$208+ per guest</li>
+          <li>Family-style gatherings: $70–$162+ per guest</li>
           <li>Meal prep: starting at $225+/week</li>
           <li>Corporate & executive dining: custom quoted</li>
         </ul>
