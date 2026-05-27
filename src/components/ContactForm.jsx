@@ -11,13 +11,13 @@ export default function ContactForm() {
       </div>
 
       <form
-        name="private-dining-inquiry"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        className="contact-form"
-        action="/"
-      >
+  name="private-dining-inquiry"
+  method="POST"
+  action="/success.html"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  className="contact-form"
+>
         <input type="hidden" name="form-name" value="private-dining-inquiry" />
 
         <p className="hidden-field">
