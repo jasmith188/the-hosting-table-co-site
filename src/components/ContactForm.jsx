@@ -16,6 +16,7 @@ export default function ContactForm() {
         data-netlify="true"
         netlify-honeypot="bot-field"
         className="contact-form"
+        action="/"
       >
         <input type="hidden" name="form-name" value="private-dining-inquiry" />
 
