@@ -4,24 +4,23 @@ const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=The+Hosting+Table+Co
 const TAKE_A_CHEF_REVIEWS_URL = "https://www.takeachef.com/en-us/chef/jimmy-smith";
 
 const testimonials = [
+  // {
+  //   quote:
+  //     "Chef Jimmy created one of the most memorable dining experiences we’ve ever had. Every course was beautifully presented, thoughtful, and absolutely delicious.",
+  //   name: "Private Dining Guest",
+  //   source: "Google Review",
+  // },
   {
     quote:
-      "Chef Jimmy created one of the most memorable dining experiences we’ve ever had. Every course was beautifully presented, thoughtful, and absolutely delicious.",
-    name: "Private Dining Guest",
-    source: "Google Review",
+      "Chef Jimmy nailed it. Fantastic food and great experience for me as host and for my guests. This was a new process for me, but Jimmy made it easy and was great to work with. Highly recommend.",
+    source: "Airbnb Guest Feedback",
   },
-  {
-    quote:
-      "From planning to cleanup, everything felt seamless. The menu was customized perfectly for our group and the dinner felt like a restaurant experience at home.",
-    name: "In-Home Dinner Client",
-    source: "Take a Chef",
-  },
-  {
-    quote:
-      "Professional, warm, organized, and incredibly talented. The Hosting Table Co. made hosting effortless so we could actually enjoy the evening.",
-    name: "Event Client",
-    source: "Guest Feedback",
-  },
+  // {
+  //   quote:
+  //     "Professional, warm, organized, and incredibly talented. The Hosting Table Co. made hosting effortless so we could actually enjoy the evening.",
+  //   name: "Event Client",
+  //   source: "Guest Feedback",
+  // },
 ];
 
 export default function Reviews() {
