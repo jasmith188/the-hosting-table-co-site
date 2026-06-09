@@ -5,6 +5,7 @@ import MenuSection from "./components/MenuSection.jsx";
 import MealPrep from "./components/MealPrep.jsx";
 import Gallery from "./components/Gallery.jsx";
 import ServiceDetails from "./components/ServiceDetails.jsx";
+import Reviews from "./components/Reviews.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -18,6 +19,7 @@ export default function App() {
       <MealPrep />
       <Gallery />
       <ServiceDetails />
+      <Reviews />
       <ContactForm />
       <Footer />
     </main>

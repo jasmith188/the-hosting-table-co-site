@@ -12,7 +12,7 @@ import roastedCarrots from '../assets/roasted-carrots.jpeg';
 import shrimpAndGrits from '../assets/shrimp-grits.jpeg';
 import burrata from '../assets/burrata.jpg';
 import eggsBenedict from '../assets/egss-benedict.jpeg';
-import skirtSteak from '../assets/skirt-steak-chimichurri.png';
+import skirtSteak from '../assets/skirt-steak-chimichurri.PNG';
 import friedChickenBenedict from '../assets/fried-chicken-biscuit-benedict.jpeg';
 import orangeChicken from '../assets/orange-chicken.jpg';
 import pastaVodka from '../assets/pasta-vodka.jpeg';
