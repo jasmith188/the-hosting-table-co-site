@@ -6,7 +6,7 @@ export default function Footer() {
         Chef Jimmy Smith |{" "}
         <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
       </p>
-      <p>Serving Wisconsin Dells, Madison, Baraboo, Lake Delton & surrounding areas.</p>
+      <p>Serving Madison, Middleton, Sun Prairie, Baraboo, Wisconsin Dells, Lake Delton & surrounding areas.</p>
     </footer>
   );
 }
