@@ -3,7 +3,7 @@ export default function Footer() {
     <footer>
       <p className="footer-brand">The Hosting Table Co.</p>
       <p>
-        Chef Jimmy |{" "}
+        Website created by Chef Jimmy |{" "}
         <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
       </p>
       <p>Serving Madison, Middleton, Sun Prairie, Baraboo, Wisconsin Dells, Lake Delton & surrounding areas.</p>
