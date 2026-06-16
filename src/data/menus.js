@@ -47,8 +47,8 @@ export const menus = [
     courses: [
       {
         label: 'Starter',
-        item: 'French Onion Soup',
-        description: 'Gruyère Crostini',
+        item: 'Mushroom Tart',
+        description: 'Puff Pastry, Goat Cheese Bechemel, Lavender',
       },
       {
         label: 'First Course',
