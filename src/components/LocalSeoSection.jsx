@@ -72,7 +72,7 @@ export default function LocalSeoSection() {
         </p>
       </div>
 
-      <div className="service-area-grid">
+      {/* <div className="service-area-grid">
         {serviceAreas.map((area) => (
           <article className="service-area-card" key={area.city}>
             <h3>{area.city}</h3>
@@ -80,7 +80,7 @@ export default function LocalSeoSection() {
             <p>{area.copy}</p>
           </article>
         ))}
-      </div>
+      </div> */}
 
       <div className="local-faqs" aria-label="Private chef frequently asked questions">
         <h3>Frequently Asked Questions</h3>
