@@ -3,35 +3,40 @@ export default function ContactForm() {
     <section className="contact-section section-wrap" id="contact">
       <div className="contact-copy">
         <p className="eyebrow">Inquire</p>
-        <h2>Plan your private dining experience.</h2>
+        <h2>Plan your private chef experience.</h2>
         <p>
           Share your event date, guest count, location, and the style of dinner you have in mind.
           Chef Jimmy will follow up directly to customize the menu and quote.
         </p>
+        <div className="direct-contact-card">
+          <strong>Prefer to reach out directly?</strong>
+          <a href="tel:+16084770652">Call or text 608-477-0652</a>
+          <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
+        </div>
       </div>
 
       <form
-  name="private-dining-inquiry"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  className="contact-form"
-  onSubmit={async (e) => {
-    e.preventDefault();
+        name="private-dining-inquiry"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        className="contact-form"
+        onSubmit={async (e) => {
+          e.preventDefault();
 
-    const form = e.target;
-    const formData = new FormData(form);
+          const form = e.target;
+          const formData = new FormData(form);
 
-    await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    });
+          await fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+          });
 
-    alert("Thank you! Your inquiry was sent.");
-    form.reset();
-  }}
->
+          alert("Thank you! Your inquiry was sent.");
+          form.reset();
+        }}
+      >
         <input type="hidden" name="form-name" value="private-dining-inquiry" />
 
         <p className="hidden-field">
@@ -68,7 +73,7 @@ export default function ContactForm() {
 
           <label>
             Location
-            <input type="text" name="location" placeholder="City / venue / Airbnb" />
+            <input type="text" name="location" placeholder="Baraboo, Wisconsin Dells, Madison, Airbnb, etc." />
           </label>
         </div>
 
@@ -92,7 +97,7 @@ export default function ContactForm() {
           <textarea
             name="message"
             rows="6"
-            placeholder="Tell me about the occasion, menu preferences, allergies, timing, and anything else I should know."
+            placeholder="Tell me about the occasion, city, venue or rental property, menu preferences, allergies, timing, and anything else I should know."
             required
           ></textarea>
         </label>

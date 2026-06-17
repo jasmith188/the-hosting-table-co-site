@@ -1,4 +1,4 @@
-import { Globe, Mail } from "lucide-react";
+import { Globe, Mail, Phone } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -14,16 +14,21 @@ export default function Hero() {
         <span></span>
       </div>
 
-      <h2>Private Dining Experiences</h2>
+      <h2>Private Chef & In-Home Dining in South Central Wisconsin</h2>
       <p className="tagline">
-        Modern minimalist private dining rooted in rustic upscale hospitality,
-        refined comfort food, and classic French influence.
+        Refined private dining, vacation rental dinners, weekly meal prep, and family-style hospitality
+        serving Baraboo, Wisconsin Dells, Lake Delton, Madison, Waunakee, Sun Prairie, and surrounding areas.
       </p>
+
+      <div className="hero-actions">
+        <a className="button-dark" href="#contact">Request a Private Chef Quote</a>
+        <a className="button-outline" href="tel:+16084770652"><Phone size={16} /> Call 608-477-0652</a>
+      </div>
 
       <div className="quick-links">
         <a href="https://thehostingtableco.com"><Globe size={16} /> thehostingtableco.com</a>
-        <a href="https://www.takeachef.com/en-us/chef/jimmy-smith">Take a Chef Profile</a>
-        <a href="#contact"><Mail size={16} /> Start an inquiry</a>
+        <a href="https://www.takeachef.com/en-us/chef/jimmy-smith" target="_blank" rel="noreferrer">Take a Chef Profile</a>
+        <a href="mailto:jimmy@thehostingtableco.com"><Mail size={16} /> jimmy@thehostingtableco.com</a>
       </div>
     </section>
   );

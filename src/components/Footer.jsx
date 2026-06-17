@@ -3,10 +3,11 @@ export default function Footer() {
     <footer>
       <p className="footer-brand">The Hosting Table Co.</p>
       <p>
-        Website created by Chef Jimmy |{" "}
+        Private chef services by Chef Jimmy |{" "}
+        <a href="tel:+16084770652">608-477-0652</a> |{" "}
         <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
       </p>
-      <p>Serving Madison, Middleton, Sun Prairie, Baraboo, Wisconsin Dells, Lake Delton & surrounding areas.</p>
+      <p>Serving Baraboo, Wisconsin Dells, Lake Delton, Madison, Middleton, Waunakee, Sun Prairie & surrounding South Central Wisconsin areas.</p>
     </footer>
   );
 }

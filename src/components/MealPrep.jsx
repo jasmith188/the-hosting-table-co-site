@@ -3,10 +3,10 @@ export default function MealPrep() {
     <section className="meal-prep-section section-wrap" id="meal-prep">
       <div className="meal-prep-copy">
         <p className="eyebrow">In-Home Meal Prep</p>
-        <h2>Weekly meals prepared in your kitchen.</h2>
+        <h2>Weekly meal prep in Baraboo, Madison, Waunakee & Sun Prairie.</h2>
         <p>
-          The Hosting Table Co. also offers in-home meal preparation for busy families,
-          professionals, new parents, and anyone who wants chef-prepared meals ready for the week.
+          The Hosting Table Co. offers in-home meal preparation for busy families, professionals, new parents,
+          and anyone who wants chef-prepared meals ready for the week.
         </p>
         <p>
           Chef Jimmy can cook in your home, package meals for easy reheating, label everything clearly,
