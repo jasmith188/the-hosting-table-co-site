@@ -15,12 +15,11 @@ const testimonials = [
       "Chef Jimmy nailed it. Fantastic food and great experience for me as host and for my guests. This was a new process for me, but Jimmy made it easy and was great to work with. Highly recommend.",
     source: "Airbnb Guest Feedback",
   },
-  // {
-  //   quote:
-  //     "Professional, warm, organized, and incredibly talented. The Hosting Table Co. made hosting effortless so we could actually enjoy the evening.",
-  //   name: "Event Client",
-  //   source: "Guest Feedback",
-  // },
+   {
+    quote:
+      "Jimmy was wonderful! He really made my birthday dinner extra special, what a treat as a new mom!",
+    source: "Guest Feedback",
+  },
 ];
 
 export default function Reviews() {

@@ -13,6 +13,25 @@ export default function ContactForm() {
           <a href="tel:+16084770652">Call or text 608-477-0652</a>
           <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
         </div>
+         <div className="direct-contact-card payment-card">
+          <strong>Payments & Gratuities</strong>
+
+          <a
+            href="https://donate.stripe.com/6oUfZj9k8ese4WBbFE3wQ01"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Support Your Chef 
+          </a>
+
+          {/* <p><strong>Zelle:</strong> jimmy@thehostingtableco.com</p> */}
+
+          <p><strong>Venmo:</strong> @jasmith188</p>
+
+          <small>
+            Thank you for supporting The Hosting Table Co.
+          </small>
+        </div>
       </div>
 
       <form
