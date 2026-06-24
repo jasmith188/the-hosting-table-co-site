@@ -4,12 +4,12 @@ const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=The+Hosting+Table+Co
 const TAKE_A_CHEF_REVIEWS_URL = "https://www.takeachef.com/en-us/chef/jimmy-smith";
 
 const testimonials = [
-  // {
-  //   quote:
-  //     "Chef Jimmy created one of the most memorable dining experiences we’ve ever had. Every course was beautifully presented, thoughtful, and absolutely delicious.",
-  //   name: "Private Dining Guest",
-  //   source: "Google Review",
-  // },
+  {
+    quote:
+      "Jimmy was absolutely incredible This was our first experience with an in home chef and it has absolutely set the bar! As a family we have done fine dining and decided this time let’s stay in This was for our Father’s Day gathering for a group of 6 No one was left hungry or without food to go home with Accommodating on even a smaller kitchen Amazing menu with grass fed local beef and ingredients fresh from the farmers market I cannot recommend him more Everything tasted so fresh and I’m just so happy with it The service was also amazing He’s super personable and really helped quell and nerves of having a stranger in your home Again i cannot recommend him enough!!!",
+    
+    source: "Guest Feedback",
+  },
   {
     quote:
       "Chef Jimmy nailed it. Fantastic food and great experience for me as host and for my guests. This was a new process for me, but Jimmy made it easy and was great to work with. Highly recommend.",
