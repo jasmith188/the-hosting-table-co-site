@@ -11,7 +11,7 @@ export default function ContactForm() {
         <div className="direct-contact-card">
           <strong>Prefer to reach out directly?</strong>
           <a href="tel:+16084770652">Call or text 608-477-0652</a>
-          <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
+          <a href="mailto:booking@thehostingtableco.com">booking@thehostingtableco.com</a>
         </div>
          <div className="direct-contact-card payment-card">
           <strong>Payments & Gratuities</strong>
@@ -26,7 +26,7 @@ export default function ContactForm() {
 
           {/* <p><strong>Zelle:</strong> jimmy@thehostingtableco.com</p> */}
 
-          <p><strong>Venmo:</strong> @jasmith188</p>
+          {/* <p><strong>Venmo:</strong> @jasmith188</p> */}
 
           <small>
             Thank you for supporting The Hosting Table Co.
