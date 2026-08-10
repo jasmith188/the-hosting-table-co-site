@@ -1,37 +1,37 @@
 const serviceAreas = [
   {
-    city: "Wisconsin Dells",
-    title: "Private chef for vacation rentals, cabins & celebrations",
+    city: "Fredericksburg",
+    title: "Private dining in the heart of the Fredericksburg region",
     copy:
-      "Ideal for Airbnb dinners, family reunions, birthday weekends, bachelor and bachelorette groups, and relaxed resort-area gatherings.",
+      "Customized in-home dinners, date nights, brunches, weekly meal prep, and celebrations throughout Fredericksburg and the surrounding area.",
   },
   {
-    city: "Baraboo",
-    title: "Personal chef service close to home",
+    city: "Stafford",
+    title: "Personal chef service for gatherings and weekly meals",
     copy:
-      "Refined in-home dinners, weekly meal prep, date nights, and small celebrations for Baraboo families and nearby communities.",
+      "Polished private dinners, family-style events, and recurring meal support for households throughout Stafford County.",
   },
   {
-    city: "Madison",
-    title: "Elevated private dining & weekly meal support",
+    city: "Spotsylvania",
+    title: "Elevated in-home dining for special occasions",
     copy:
-      "Multi-course dinners, family-style events, corporate dining, and in-home meal prep for busy households throughout the Madison area.",
+      "Multi-course dinners, milestone celebrations, vacation-rental dining, and in-home meal prep across Spotsylvania County.",
   },
   {
-    city: "Waunakee",
-    title: "Meal prep and private dinners for busy families",
+    city: "Northern Virginia",
+    title: "Destination-worthy dining brought to your table",
     copy:
-      "Chef-prepared weekly meals, postpartum support, family dinners, and special occasion menus customized around your household.",
+      "Private dining, corporate hospitality, and special-event menus available across Northern Virginia with travel quoted by location.",
   },
   {
-    city: "Sun Prairie",
-    title: "Personal chef services for gatherings and weekly meals",
+    city: "King George & Caroline",
+    title: "Private chef experiences in nearby communities",
     copy:
-      "Comfortable, polished service for birthdays, anniversaries, brunches, family-style meals, and recurring in-home cooking.",
+      "Comfortable, polished service for birthdays, anniversaries, brunches, family-style meals, and vacation-rental stays.",
   },
   {
-    city: "Lake Delton",
-    title: "Vacation rental dining without the restaurant wait",
+    city: "Virginia Destinations",
+    title: "Vacation-rental dining without leaving the property",
     copy:
       "Bring a restaurant-quality experience to your rental home with customized menus, on-site cooking, service, and cleanup.",
   },
@@ -39,12 +39,12 @@ const serviceAreas = [
 
 const faqs = [
   {
-    question: "What areas does The Hosting Table Co. serve in Wisconsin?",
+    question: "What areas does The Hosting Table Co. serve in Virginia?",
     answer:
-      "Chef Jimmy currently serves Baraboo, Wisconsin Dells, Lake Delton, Madison, Waunakee, Sun Prairie, Middleton, and nearby South Central Wisconsin communities.",
+      "Chef Jimmy is based in Fredericksburg and serves Fredericksburg, Stafford, Spotsylvania, Northern Virginia, and nearby destinations. Travel availability and fees depend on the event location.",
   },
   {
-    question: "Do you cook for Wisconsin Dells vacation rentals and Airbnbs?",
+    question: "Do you cook for Virginia vacation rentals and Airbnbs?",
     answer:
       "Yes. Vacation rental and Airbnb dinners are a great fit for family trips, celebrations, bachelor and bachelorette weekends, and groups who want a private dining experience without leaving the property.",
   },
@@ -64,11 +64,12 @@ export default function LocalSeoSection() {
   return (
     <section className="local-seo-section section-wrap" id="service-areas">
       <div className="local-seo-heading">
-        <p className="eyebrow">Wisconsin Service Areas</p>
-        <h2>Private chef services in Baraboo, Wisconsin Dells, Madison, Waunakee & Sun Prairie.</h2>
+        <p className="eyebrow">Virginia Service Areas</p>
+        <h2>Private chef services in Fredericksburg, Stafford, Spotsylvania & Northern Virginia.</h2>
         <p>
-          The Hosting Table Co. is currently based in Baraboo, Wisconsin and serves South Central Wisconsin with private dinners,
-          vacation rental dining, weekly meal prep, brunch experiences, corporate dining, and family-style gatherings.
+          The Hosting Table Co. is based in Fredericksburg, Virginia and serves the Fredericksburg region, Northern Virginia,
+          and nearby destinations with private dinners, vacation rental dining, weekly meal prep, brunch experiences,
+          corporate dining, and family-style gatherings.
         </p>
       </div>
 

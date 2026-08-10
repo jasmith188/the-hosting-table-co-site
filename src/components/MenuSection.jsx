@@ -6,7 +6,7 @@ export default function MenuSection() {
     <>
       <section className="section-wrap" id="menus">
         <p className="eyebrow">Dining Experiences</p>
-        <h2 className="section-title">Sample private chef menus for Wisconsin dinners, Airbnb gatherings & weekly meal support.</h2>
+        <h2 className="section-title">Sample private chef menus for Virginia dinners, vacation-rental gatherings & weekly meal support.</h2>
         <div className="menus-grid">
           {menus.map((menu) => (
             <MenuCard key={menu.title} menu={menu} />

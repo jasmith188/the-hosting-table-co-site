@@ -3,7 +3,7 @@ export default function MealPrep() {
     <section className="meal-prep-section section-wrap" id="meal-prep">
       <div className="meal-prep-copy">
         <p className="eyebrow">In-Home Meal Prep</p>
-        <h2>Weekly meal prep in Baraboo, Madison, Waunakee & Sun Prairie.</h2>
+        <h2>Weekly meal prep in Fredericksburg, Stafford, Spotsylvania & Northern Virginia.</h2>
         <p>
           The Hosting Table Co. offers in-home meal preparation for busy families, professionals, new parents,
           and anyone who wants chef-prepared meals ready for the week.

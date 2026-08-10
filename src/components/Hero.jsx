@@ -14,10 +14,10 @@ export default function Hero() {
         <span></span>
       </div>
 
-      <h2>Private Chef & In-Home Dining in South Central Wisconsin</h2>
+      <h2>Private Chef & In-Home Dining in Fredericksburg, Virginia</h2>
       <p className="tagline">
         Refined private dining, vacation rental dinners, weekly meal prep, and family-style hospitality
-        serving Baraboo, Wisconsin Dells, Lake Delton, Madison, Waunakee, Sun Prairie, and surrounding areas.
+        serving Fredericksburg, Stafford, Spotsylvania, Northern Virginia, and nearby destinations.
       </p>
 
       <div className="hero-actions">

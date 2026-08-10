@@ -92,7 +92,7 @@ export default function ContactForm() {
 
           <label>
             Location
-            <input type="text" name="location" placeholder="Baraboo, Wisconsin Dells, Madison, Airbnb, etc." />
+            <input type="text" name="location" placeholder="Fredericksburg, Stafford, Spotsylvania, NOVA, etc." />
           </label>
         </div>
 

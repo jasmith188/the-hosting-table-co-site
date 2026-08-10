@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thehostingtableco.com/sitemap.xml

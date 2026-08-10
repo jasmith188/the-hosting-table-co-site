@@ -7,16 +7,16 @@ export default function About() {
         <p className="eyebrow">About Chef Jimmy</p>
         <h2>Refined private dining with polished, personal hospitality.</h2>
         <p>
-          Based in  Wisconsin, Chef Jimmy  brings nearly 20 years of culinary experience across fine dining,
+          Based in Fredericksburg, Virginia, Chef Jimmy brings nearly 20 years of culinary experience across fine dining,
           upscale casual restaurants, private chef work, and high-volume kitchens to every in-home dining experience.
         </p>
         <p>
-          From Wisconsin Dells vacation rental dinners and intimate date nights to Madison-area meal prep, corporate dining,
+          From Fredericksburg vacation rental dinners and intimate date nights to Northern Virginia meal prep, corporate dining,
           and family-style celebrations, every menu is customized around seasonality, guest preferences, kitchen logistics,
           and polished hospitality.
         </p>
       </div>
-      <img src={chefJimmy} alt="Chef Jimmy, private chef serving Baraboo, Wisconsin Dells and Madison" className="chef-photo" />
+      <img src={chefJimmy} alt="Chef Jimmy, private chef serving Fredericksburg and Northern Virginia" className="chef-photo" />
     </section>
   );
 }

@@ -8,7 +8,7 @@ export default function ServiceDetails() {
         <h3>Service Styles</h3>
         <ul>
           <li>Private chef dinners in your home</li>
-          <li>Wisconsin Dells vacation rental / Airbnb experiences</li>
+          <li>Virginia vacation rental / Airbnb experiences</li>
           <li>Multi-course plated dinners</li>
           <li>Family-style gatherings</li>
           <li>Corporate & executive dining</li>
