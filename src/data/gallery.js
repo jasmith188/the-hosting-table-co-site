@@ -16,7 +16,7 @@ import summerBBQApps from "../assets/summerBBQApps.jpeg";
 import kingCrab from "../assets/king-crab.jpeg";
 import shrimpAndGrits from "../assets/shrimp-grits.jpeg";
 import burrata from "../assets/burrata.jpg";
-import lemonTart from "../assets/lemon-tart.jpeg";
+import lemonTart from "../assets/lemon-tart.png";
 import eggsBenedict from "../assets/egss-benedict.jpeg";
 import friedChickenBenedict from "../assets/fried-chicken-biscuit-benedict.jpeg";
 import orangeChicken from "../assets/orange-chicken.jpg";
@@ -32,6 +32,7 @@ export const gallery = [
   { src: ceviche, title: "Ceviche" },
   { src: kingCrab, title: "King Crab" },
   { src: honeyCheesecake, title: "Honey Cheesecake" },
+  { src: lemonTart, title: "Lemon Tart" },
   { src: brunch, title: "Coffee Rubbed Beef Tenderloin, Crab Cake Benedicts" },
   { src: latinAmeericanApps, title: "Latin American Appetizers" },
   { src: mushroomPasta, title: "Mushroom Pasta" },

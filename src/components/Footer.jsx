@@ -6,6 +6,8 @@ export default function Footer() {
         Private chef services by Chef Jimmy |{" "}
         <a href="tel:+16084770652">608-477-0652</a> |{" "}
         <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
+        <br />
+        website created by the chef 
       </p>
     </footer>
   );
