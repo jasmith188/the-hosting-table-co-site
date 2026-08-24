@@ -1,27 +1,38 @@
 const serviceAreas = [
   {
     city: "Fredericksburg",
+    path: "/private-chef-fredericksburg-va/",
     title: "Private dining in the heart of the Fredericksburg region",
     copy:
       "Customized in-home dinners, date nights, brunches, weekly meal prep, and celebrations throughout Fredericksburg and the surrounding area.",
   },
   {
     city: "Stafford",
+    path: "/private-chef-stafford-va/",
     title: "Personal chef service for gatherings and weekly meals",
     copy:
       "Polished private dinners, family-style events, and recurring meal support for households throughout Stafford County.",
   },
   {
     city: "Spotsylvania",
+    path: "/private-chef-spotsylvania-va/",
     title: "Elevated in-home dining for special occasions",
     copy:
       "Multi-course dinners, milestone celebrations, vacation-rental dining, and in-home meal prep across Spotsylvania County.",
   },
   {
     city: "Northern Virginia",
+    path: "/private-chef-northern-virginia/",
     title: "Destination-worthy dining brought to your table",
     copy:
       "Private dining, corporate hospitality, and special-event menus available across Northern Virginia with travel quoted by location.",
+  },
+  {
+    city: "Lake Anna",
+    path: "/private-chef-lake-anna-va/",
+    title: "Vacation-rental dining for lake weekends and celebrations",
+    copy:
+      "Private chef dinners for Lake Anna vacation rentals, birthdays, family trips, reunions, and group weekends without leaving the property.",
   },
   {
     city: "King George & Caroline",
@@ -73,15 +84,16 @@ export default function LocalSeoSection() {
         </p>
       </div>
 
-      {/* <div className="service-area-grid">
+      <div className="service-area-grid">
         {serviceAreas.map((area) => (
           <article className="service-area-card" key={area.city}>
-            <h3>{area.city}</h3>
+            <h3>{area.path ? <a href={area.path}>{area.city}</a> : area.city}</h3>
             <strong>{area.title}</strong>
             <p>{area.copy}</p>
+            {area.path && <a className="area-learn-more" href={area.path}>Explore {area.city} private chef service →</a>}
           </article>
         ))}
-      </div> */}
+      </div>
 
       <div className="local-faqs" aria-label="Private chef frequently asked questions">
         <h3>Frequently Asked Questions</h3>

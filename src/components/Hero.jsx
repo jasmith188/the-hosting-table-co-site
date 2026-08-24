@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="brand-row">
         <img src="/the-hosting-table-co-dijon-logo.png" alt="The Hosting Table Co. logo" className="hero-logo" />
-        <h1>The Hosting Table Co.</h1>
+        <div className="brand-name">The Hosting Table Co.</div>
       </div>
 
       <div className="gold-divider">
@@ -14,7 +14,8 @@ export default function Hero() {
         <span></span>
       </div>
 
-      <h2>Private Chef & In-Home Dining in Fredericksburg, Virginia</h2>
+      <h1 className="hero-search-title">Private Chef in Fredericksburg, VA</h1>
+      <h2>In-Home Dining, Celebrations & Personal Chef Service</h2>
       <p className="tagline">
         Refined private dining, vacation rental dinners, weekly meal prep, and family-style hospitality
         serving Fredericksburg, Stafford, Spotsylvania, Northern Virginia, and nearby destinations.
@@ -28,7 +29,7 @@ export default function Hero() {
       <div className="quick-links">
         <a href="https://thehostingtableco.com"><Globe size={16} /> thehostingtableco.com</a>
         <a href="https://www.takeachef.com/en-us/chef/jimmy-smith" target="_blank" rel="noreferrer">Take a Chef Profile</a>
-        <a href="mailto:jimmy@thehostingtableco.com"><Mail size={16} /> jimmy@thehostingtableco.com</a>
+        <a href="mailto:booking@thehostingtableco.com"><Mail size={16} /> booking@thehostingtableco.com</a>
       </div>
     </section>
   );
