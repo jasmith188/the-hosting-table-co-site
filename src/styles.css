@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 18px 0 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 22px;
 }
@@ -15,7 +15,7 @@
 }
 
 .header-logo {
-  width: 60px;
+  width: 12rem;
   height: auto;
   display: block;
 }
@@ -47,7 +47,7 @@
   }
 
   .header-logo {
-    width: 40px;
+    width: 6rem;
   }
 
   .header-nav {

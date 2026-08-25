@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-brand-lockup">
-        <img src="/the-hosting-table-co-dijon-logo.png" alt="" className="hero-logo" />
+        {/* <img src="/the-hosting-table-co-dijon-logo.png" alt="" className="hero-logo" /> */}
         <div className="hero-brand-name">The Hosting Table Co.</div>
       </div>
 
