@@ -40,21 +40,31 @@ export default function ContactForm() {
         data-netlify="true"
         netlify-honeypot="bot-field"
         className="contact-form"
-        onSubmit={async (e) => {
-          e.preventDefault();
+       onSubmit={async (e) => {
+  e.preventDefault();
 
-          const form = e.target;
-          const formData = new FormData(form);
+  const form = e.currentTarget;
+  const formData = new FormData(form);
 
-          await fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-          });
+  try {
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
 
-          alert("Thank you! Your inquiry was sent.");
-          form.reset();
-        }}
+    if (!response.ok) {
+      throw new Error(`Form submission failed: ${response.status}`);
+    }
+
+    window.location.href = "/success.html";
+  } catch (error) {
+    console.error(error);
+    alert(
+      "Sorry, there was a problem sending your inquiry. Please try again or contact me directly."
+    );
+  }
+}}
       >
         <input type="hidden" name="form-name" value="private-dining-inquiry" />
 
