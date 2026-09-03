@@ -10,7 +10,7 @@ export default function Header() {
         <a href="/#menus">Menus</a>
         <a href="/#meal-prep">Meal Prep</a>
         <a href="/#reviews">Reviews</a>
-        <a href="tel:+16084770652">Call</a>
+        <a href="tel:+15403108358">Call</a>
         <a className="nav-cta" href="#contact">Inquire</a>
       </nav>
     </header>

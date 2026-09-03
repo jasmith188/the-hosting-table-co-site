@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       <p className="hero-service-area">Serving Fredericksburg, Stafford, Spotsylvania, Lake Anna &amp; Northern Virginia</p>
-      <a className="hero-phone" href="tel:+16084770652"><Phone size={15} /> 608-477-0652</a>
+      <a className="hero-phone" href="tel:+15403108358"><Phone size={15} /> 540-310-8358</a>
     </section>
   );
 }

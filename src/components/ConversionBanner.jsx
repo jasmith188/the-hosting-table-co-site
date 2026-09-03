@@ -13,7 +13,7 @@ export default function ConversionBanner() {
       </div>
       <div className="conversion-actions">
         <a className="button-dark" href="#contact">Request a Quote</a>
-        <a className="button-outline" href="tel:+16084770652"><Phone size={16} /> Call 608-477-0652</a>
+        <a className="button-outline" href="tel:+15403108358"><Phone size={16} /> Call 540-310-8358</a>
         <a className="button-outline" href="mailto:jimmy@thehostingtableco.com"><Mail size={16} /> Email Jimmy</a>
       </div>
     </section>

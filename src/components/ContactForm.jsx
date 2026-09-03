@@ -10,7 +10,7 @@ export default function ContactForm() {
         </p>
         <div className="direct-contact-card">
           <strong>Prefer to reach out directly?</strong>
-          <a href="tel:+16084770652">Call or text 608-477-0652</a>
+          <a href="tel:+15403108358">Call or text 540-310-8358</a>
           <a href="mailto:booking@thehostingtableco.com">booking@thehostingtableco.com</a>
         </div>
          <div className="direct-contact-card payment-card">

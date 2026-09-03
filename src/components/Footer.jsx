@@ -4,7 +4,7 @@ export default function Footer() {
       <p className="footer-brand">The Hosting Table Co.</p>
       <p>
         Private chef services by Chef Jimmy |{" "}
-        <a href="tel:+16084770652">608-477-0652</a> |{" "}
+        <a href="tel:+15403108358">540-310-8358</a> |{" "}
         <a href="mailto:jimmy@thehostingtableco.com">jimmy@thehostingtableco.com</a>
         <br />
         website created by the chef 
