@@ -1,6 +1,7 @@
 import { ExternalLink, Star } from "lucide-react";
 
-const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=The+Hosting+Table+Co+reviews";
+const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=The+Hosting+Table+Co.&ludocid=2223884113885501605&ibp=gwp;0,7&source=g.page.m.kd._";
+const GOOGLE_WRITE_REVIEW_URL = "https://g.page/r/CaWYx6XR0tweEAI/review";
 const TAKE_A_CHEF_REVIEWS_URL = "https://www.takeachef.com/en-us/chef/jimmy-smith";
 
 const testimonials = [
@@ -70,6 +71,9 @@ export default function Reviews() {
       <div className="reviews-actions">
         <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noreferrer" className="button-outline">
           Read More Google Reviews
+        </a>
+        <a href={GOOGLE_WRITE_REVIEW_URL} target="_blank" rel="noreferrer" className="button-outline">
+          Write a Google Review
         </a>
         <a href={TAKE_A_CHEF_REVIEWS_URL} target="_blank" rel="noreferrer" className="button-dark">
           Read More on Take a Chef
