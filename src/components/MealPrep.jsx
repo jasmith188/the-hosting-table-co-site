@@ -20,25 +20,25 @@ export default function MealPrep() {
 
       <div className="meal-prep-cards">
         <article>
-          <h3>3 Meals / Week</h3>
+          <h3>3 Dishes / Visit</h3>
           <p className="price">Starting at $225–$325</p>
           <p>Great for light weekly support, lunches, or a few ready-to-heat dinners.</p>
         </article>
 
         <article>
-          <h3>4 Meals / Week</h3>
+          <h3>4 Dishes / Visit</h3>
           <p className="price">Starting at $300–$425</p>
           <p>Ideal for couples, small families, or anyone wanting more consistent weekly coverage.</p>
         </article>
 
         <article>
-          <h3>5 Meals / Week</h3>
+          <h3>5 Dishes / Visit</h3>
           <p className="price">Starting at $375–$550</p>
           <p>Best for full weekly meal support, postpartum care, or busy family schedules.</p>
         </article>
 
         <p className="meal-prep-disclaimer">
-          Pricing varies by portions, dietary needs, groceries, travel, packaging, and menu complexity.
+          Each dish can be prepared in multiple portions. Your quote confirms the number of dishes, servings, and visits. Pricing varies by portions, dietary needs, groceries, travel, packaging, and menu complexity.
           Grocery cost is separate unless quoted otherwise.
         </p>
       </div>

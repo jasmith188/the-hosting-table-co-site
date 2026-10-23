@@ -15,7 +15,7 @@ export default function LocationPage({ location }) {
       <p className="location-lead">{location.intro}</p>
       <div className="hero-actions">
         <a className="button-dark" href="#contact">Request a Private Chef Quote</a>
-        <a className="button-outline" href="tel:+16084770652">Call 608-477-0652</a>
+        <a className="button-outline" href="tel:+15403108358">Call 540-310-8358</a>
       </div>
     </section>
 

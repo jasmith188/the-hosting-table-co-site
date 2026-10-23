@@ -1,4 +1,4 @@
-import { ExternalLink, Star } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=The+Hosting+Table+Co.&ludocid=2223884113885501605&ibp=gwp;0,7&source=g.page.m.kd._";
 const GOOGLE_WRITE_REVIEW_URL = "https://g.page/r/CaWYx6XR0tweEAI/review";
@@ -19,6 +19,11 @@ const testimonials = [
    {
     quote:
       "Jimmy was wonderful! He really made my birthday dinner extra special, what a treat as a new mom!",
+    source: "Guest Feedback",
+  },
+  {
+    quote:
+      "I want to start by saying that this was the first time I have done something like this and it may be one of the best experiences I have ever had. Chef Jimmy was one of the coolest people I've ever met. Great conversation, great person, and the food was just the icing in the cake. Everything was delicious, came out fast, and looked immaculate as well. I would recommend 100 out of 100 times",
     source: "Guest Feedback",
   },
 ];
@@ -54,14 +59,9 @@ export default function Reviews() {
       <div className="testimonials-grid">
         {testimonials.map((testimonial) => (
           <article className="testimonial-card" key={testimonial.quote}>
-            <div className="stars" aria-label="Five star review">
-              {[...Array(5)].map((_, index) => (
-                <Star key={index} size={16} fill="currentColor" aria-hidden="true" />
-              ))}
-            </div>
             <blockquote>“{testimonial.quote}”</blockquote>
             <footer>
-              <strong>{testimonial.name}</strong>
+              {testimonial.name && <strong>{testimonial.name}</strong>}
               <span>{testimonial.source}</span>
             </footer>
           </article>

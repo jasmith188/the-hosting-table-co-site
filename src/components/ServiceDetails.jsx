@@ -24,10 +24,10 @@ export default function ServiceDetails() {
         <ol>
           <li>Initial consultation & event details</li>
           <li>Customized menu creation</li>
-          <li>Deposit & event confirmation</li>
-          <li>Ingredient sourcing & preparation</li>
-          <li>In-home cooking & service</li>
-          <li>Full kitchen cleanup included</li>
+          <li>50% deposit to reserve your date</li>
+          <li>Final guest count confirmed 5 days before your event</li>
+          <li>Remaining balance due 48 hours before your event</li>
+          <li>Ingredient sourcing, in-home cooking, service & kitchen cleanup</li>
         </ol>
       </div>
 
@@ -36,12 +36,12 @@ export default function ServiceDetails() {
         <h3>Typical Pricing</h3>
         <ul>
           <li>Intimate multi-course dinners: $162–$208+ per guest</li>
-          <li>Family-style gatherings: $70–$162+ per guest</li>
+          <li>Family-style gatherings: from $85 per guest</li>
           <li>Meal prep: starting at $225+/week</li>
           <li>Corporate & executive dining: custom quoted</li>
         </ul>
         <p className="fine-print">
-          Premium ingredients, travel, rentals, and staffing quoted separately when applicable.
+          Your final quote confirms what is included. Premium ingredients, travel, rentals, and staffing may affect pricing. Your date is reserved once the deposit is received.
         </p>
       </div>
     </section>

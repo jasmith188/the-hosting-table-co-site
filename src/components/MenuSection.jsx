@@ -1,26 +1,39 @@
+import { useState } from "react";
 import MenuCard from "./MenuCard.jsx";
-import { menus } from "../data/menus.js";
+import { seasons, getCurrentSeason, getMenus } from "../data/seasonalMenus.js";
+import "../styles/seasonal-menus.css";
 
 export default function MenuSection() {
+  const [season, setSeason] = useState(getCurrentSeason);
+  const selectedSeason = seasons.find((item) => item.id === season);
   return (
-    <>
-      <section className="section-wrap" id="menus">
-        <p className="eyebrow">Dining Experiences</p>
-        <h2 className="section-title">Sample private chef menus for Virginia dinners, vacation-rental gatherings & weekly meal support.</h2>
-        <div className="menus-grid">
-          {menus.map((menu) => (
-            <MenuCard key={menu.title} menu={menu} />
-          ))}
-        </div>
-      </section>
-
-      <section className="custom-menu-note section-wrap">
+    <section className="section-wrap thc-seasonal-menus" id="menus" aria-labelledby="thc-menu-heading">
+      <p className="eyebrow">At the table · Sample menus</p>
+      <h2 className="section-title" id="thc-menu-heading">Your favorite flavors. A menu for the season.</h2>
+      <p className="thc-menu-intro">
+        Explore signature dishes from Chef Jimmy’s dinners alongside seasonal menu ideas.
+        Open a cuisine below, then we’ll build your menu around the occasion—whether you’re
+        planning a plated dinner or passing dishes around the table.
+      </p>
+      <div className="thc-season-picker">
+        <label htmlFor="thc-menu-season">Explore a season</label>
+        <select id="thc-menu-season" value={season} onChange={(event) => setSeason(event.target.value)}>
+          {seasons.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+        </select>
+        <p aria-live="polite">{selectedSeason.note}</p>
+      </div>
+      <div className="thc-menu-collection" key={season}>
+        {getMenus(season).map((menu) => <MenuCard key={menu.id} menu={menu} />)}
+      </div>
+      <div className="thc-menu-note">
+        <h3>Let’s make it your menu.</h3>
         <p>
-          Menus are starting points only. Every private dining experience can be customized around
-          guest preferences, seasonal ingredients, allergies, dietary needs, budget, service style, and the occasion.
-          Clients may swap courses, adjust ingredients, or build a completely custom menu with Chef Jimmy.
+          Mix cuisines, request a favorite dish, or ask about vegetarian options. These are sample menus;
+          ingredients and seafood vary with availability. Share allergies and dietary needs when you inquire
+          so we can discuss suitable options before confirming your menu.
         </p>
-      </section>
-    </>
+        <a className="button-dark" href="#contact">Plan Your Menu</a>
+      </div>
+    </section>
   );
 }

@@ -1123,3 +1123,31 @@ footer p {
   .hero-subtitle { margin:13px auto 22px; font-size:1.03rem; }
   .hero-service-area { margin-top:21px; font-size:.78rem; letter-spacing:.055em; }
 }
+
+
+/* Booking clarity, keyboard access, and small-screen refinements. */
+a:focus-visible, button:focus-visible, summary:focus-visible, .gallery-track:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+.contact-form button { background: var(--gold); }
+.contact-form button:disabled { cursor: wait; opacity: .75; transform: none; }
+.contact-form [role="alert"] { color: #8b2424; line-height: 1.6; }
+.direct-contact-card a { color: var(--gold); overflow-wrap: anywhere; }
+.meal-prep-cards .price, .service-area-card strong, .area-learn-more { color: var(--gold); }
+.testimonial-card footer { width: 100%; margin: 0; padding: 14px 0 0; }
+.button-outline, .button-dark { text-align: center; }
+.header-logo-link { flex-shrink: 0; }
+.header-nav a { padding-top: 8px; padding-bottom: 8px; }
+@media (max-width: 920px) {
+  .site-header { flex-direction: column; }
+  .header-nav { justify-content: center; }
+}
+@media (max-width: 640px) {
+  .contact-form input, .contact-form select, .contact-form textarea { font-size: 16px; }
+  .direct-contact-card { min-width: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button-outline, .button-dark, .contact-form button, .review-source-card { transition: none; }
+}

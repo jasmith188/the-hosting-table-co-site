@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function ContactForm() {
+  const [isSending, setIsSending] = useState(false);
+  const [error, setError] = useState("");
   return (
     <section className="contact-section section-wrap" id="contact">
       <div className="contact-copy">
@@ -14,14 +18,14 @@ export default function ContactForm() {
           <a href="mailto:booking@thehostingtableco.com">booking@thehostingtableco.com</a>
         </div>
          <div className="direct-contact-card payment-card">
-          <strong>Payments & Gratuities</strong>
+          <strong>Optional Gratuities</strong>
 
           <a
             href="https://donate.stripe.com/6oUfZj9k8ese4WBbFE3wQ01"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Support Your Chef 
+            Leave a Gratuity 
           </a>
 
           {/* <p><strong>Zelle:</strong> jimmy@thehostingtableco.com</p> */}
@@ -29,7 +33,7 @@ export default function ContactForm() {
           {/* <p><strong>Venmo:</strong> @jasmith188</p> */}
 
           <small>
-            Thank you for supporting The Hosting Table Co.
+            Thank you for supporting The Hosting Table Co. Event deposits and balances are arranged by invoice.
           </small>
         </div>
       </div>
@@ -42,6 +46,9 @@ export default function ContactForm() {
         className="contact-form"
        onSubmit={async (e) => {
   e.preventDefault();
+  if (isSending) return;
+  setError("");
+  setIsSending(true);
 
   const form = e.currentTarget;
   const formData = new FormData(form);
@@ -59,35 +66,33 @@ export default function ContactForm() {
 
     window.location.href = "/success.html";
   } catch (error) {
-    console.error(error);
-    alert(
-      "Sorry, there was a problem sending your inquiry. Please try again or contact me directly."
-    );
+    setError("Your inquiry could not be sent. Please try again, call 540-310-8358, or email booking@thehostingtableco.com.");
+    setIsSending(false);
   }
 }}
       >
         <input type="hidden" name="form-name" value="private-dining-inquiry" />
 
-        <p className="hidden-field">
+        <p className="hidden-field" hidden>
           <label>
-            Do not fill this out: <input name="bot-field" />
+            Do not fill this out: <input name="bot-field" tabIndex={-1} autoComplete="off" />
           </label>
         </p>
 
         <div className="form-grid">
           <label>
             Name
-            <input type="text" name="name" placeholder="Your name" required />
+            <input type="text" name="name" placeholder="Your name" autoComplete="name" required />
           </label>
 
           <label>
             Email
-            <input type="email" name="email" placeholder="you@example.com" required />
+            <input type="email" name="email" placeholder="you@example.com" autoComplete="email" required />
           </label>
 
           <label>
             Phone
-            <input type="tel" name="phone" placeholder="Your phone number" />
+            <input type="tel" name="phone" placeholder="Your phone number" autoComplete="tel" />
           </label>
 
           <label>
@@ -102,7 +107,7 @@ export default function ContactForm() {
 
           <label>
             Location
-            <input type="text" name="location" placeholder="Fredericksburg, Stafford, Spotsylvania, NOVA, etc." />
+            <input type="text" name="location" placeholder="City or ZIP code" />
           </label>
         </div>
 
@@ -126,12 +131,16 @@ export default function ContactForm() {
           <textarea
             name="message"
             rows="6"
-            placeholder="Tell me about the occasion, city, venue or rental property, menu preferences, allergies, timing, and anything else I should know."
+            placeholder="Tell me about the occasion, city, venue or rental property, favorite cuisines, allergies, budget per person, timing, and anything else I should know."
             required
           ></textarea>
         </label>
 
-        <button type="submit">Submit Inquiry</button>
+        <p>Your date is reserved with a 50% deposit after the menu and quote are confirmed.</p>
+        {error && <p role="alert">{error}</p>}
+        <button type="submit" disabled={isSending} aria-busy={isSending}>
+          {isSending ? "Sending…" : "Send My Inquiry"}
+        </button>
       </form>
     </section>
   );

@@ -25,7 +25,7 @@ const serviceAreas = [
     path: "/private-chef-northern-virginia/",
     title: "Destination-worthy dining brought to your table",
     copy:
-      "Private dining, corporate hospitality, and special-event menus available across Northern Virginia with travel quoted by location.",
+      "Private dinners and celebrations in Alexandria, Arlington, Ashburn, and across Northern Virginia. Travel is quoted by location.",
   },
   {
     city: "Lake Anna",
@@ -41,7 +41,7 @@ const serviceAreas = [
       "Comfortable, polished service for birthdays, anniversaries, brunches, family-style meals, and vacation-rental stays.",
   },
   {
-    city: "Virginia Destinations",
+    city: "Richmond & Virginia Destinations",
     title: "Vacation-rental dining without leaving the property",
     copy:
       "Bring a restaurant-quality experience to your rental home with customized menus, on-site cooking, service, and cleanup.",
@@ -49,10 +49,12 @@ const serviceAreas = [
 ];
 
 const faqs = [
+  { question: "How do I reserve my date?", answer: "After we agree on your menu and quote, a 50% deposit reserves your date. The final guest count is due 5 days before the event, and the remaining balance is due 48 hours before the event." },
+  { question: "Can we serve dinner family-style?", answer: "Absolutely. Choose a plated multi-course dinner or starters followed by family-style entrées and sides. We’ll recommend a format that suits your group and kitchen." },
   {
     question: "What areas does The Hosting Table Co. serve in Virginia?",
     answer:
-      "Chef Jimmy is based in Fredericksburg and serves Fredericksburg, Stafford, Spotsylvania, Northern Virginia, and nearby destinations. Travel availability and fees depend on the event location.",
+      "Chef Jimmy is based in Fredericksburg and serves Fredericksburg, Stafford, Spotsylvania, Richmond, Lake Anna, and Northern Virginia, including Alexandria, Arlington, and Ashburn. Travel availability and fees depend on the event location.",
   },
   {
     question: "Do you cook for Virginia vacation rentals and Airbnbs?",

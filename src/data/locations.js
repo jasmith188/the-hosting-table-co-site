@@ -50,7 +50,7 @@ export const locations = {
     intro: "Destination-worthy private dining for homes, celebrations and gatherings across Northern Virginia.",
     title: "Private Chef Northern Virginia | The Hosting Table Co.",
     description: "Private chef service across Northern Virginia for dinner parties, celebrations, date nights, corporate hospitality and custom in-home dining.",
-    areas: "Prince William, Fairfax, Alexandria, Arlington, McLean and other Northern Virginia destinations by availability",
+    areas: "Prince William, Fairfax, Alexandria, Arlington, McLean, Ashburn and other Northern Virginia destinations by availability",
     body: [
       "The Hosting Table Co. travels from Fredericksburg for select private dining experiences throughout Northern Virginia. The focus is personal hospitality: a custom menu, on-site cooking and a dining experience designed around your guests rather than a one-size-fits-all catering package.",
       "From intimate date nights to birthdays, anniversaries, corporate dinners and family gatherings, service can be plated or family-style and customized around dietary requirements, preferences and the occasion. Travel availability and pricing are quoted by location."

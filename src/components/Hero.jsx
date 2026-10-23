@@ -13,14 +13,14 @@ export default function Hero() {
       </div>
 
       <h1 className="hero-search-title">Private Chef in Fredericksburg, VA</h1>
-      <p className="hero-subtitle">Elevated dining, thoughtfully prepared and served in the comfort of your home.</p>
+      <p className="hero-subtitle">Seasonal menus, personal service, and a chef in your kitchen. Enjoy the evening with your guests.</p>
 
       <div className="hero-actions">
         <a className="button-dark" href="#menus">Explore Menus</a>
         <a className="button-outline" href="#contact">Plan Your Dinner</a>
       </div>
 
-      <p className="hero-service-area">Serving Fredericksburg, Stafford, Spotsylvania, Lake Anna &amp; Northern Virginia</p>
+      <p className="hero-service-area">Serving Fredericksburg, Stafford, Spotsylvania, Lake Anna, Richmond &amp; Northern Virginia</p>
       <a className="hero-phone" href="tel:+15403108358"><Phone size={15} /> 540-310-8358</a>
     </section>
   );

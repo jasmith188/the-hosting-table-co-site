@@ -4,19 +4,24 @@ export default function About() {
   return (
     <section className="about section-wrap" id="about">
       <div className="about-copy">
-        <p className="eyebrow">About Chef Jimmy</p>
-        <h2>Refined private dining with polished, personal hospitality.</h2>
+        <p className="eyebrow">Jimmy · Owner & Chef</p>
+        <h2>Good food. Personal service. Time with your guests.</h2>
         <p>
-          Based in Fredericksburg, Virginia, Chef Jimmy brings nearly 20 years of culinary experience across fine dining,
-          upscale casual restaurants, private chef work, and high-volume kitchens to every in-home dining experience.
+          I’m Jimmy, the chef behind The Hosting Table Co. I’m based in Fredericksburg,
+          Virginia, with nearly 20 years of experience in restaurant kitchens, fine dining,
+          and private homes.
         </p>
         <p>
-          From Fredericksburg vacation rental dinners and intimate date nights to Northern Virginia meal prep, corporate dining,
-          and family-style celebrations, every menu is customized around seasonality, guest preferences, kitchen logistics,
-          and polished hospitality.
+          I build each menu around the people at your table. That might mean a four-course
+          birthday dinner, a relaxed family-style celebration, or meals prepared for a busy week.
+          I handle the planning, shopping, cooking, and kitchen cleanup so you can enjoy the occasion.
+        </p>
+        <p>
+          I cook throughout Fredericksburg, Stafford, Spotsylvania, Richmond, and Northern Virginia,
+          including Alexandria, Arlington, and Ashburn. Tell me where you’re hosting and what you love to eat.
         </p>
       </div>
-      <img src={chefJimmy} alt="Chef Jimmy, private chef serving Fredericksburg and Northern Virginia" className="chef-photo" />
+      <img src={chefJimmy} alt="Chef Jimmy, owner of The Hosting Table Co. in Fredericksburg, Virginia" className="chef-photo" loading="lazy" decoding="async" />
     </section>
   );
 }
