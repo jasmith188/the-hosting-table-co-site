@@ -1151,3 +1151,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .gallery-track:foc
   html { scroll-behavior: auto; }
   .button-outline, .button-dark, .contact-form button, .review-source-card { transition: none; }
 }
+
+/* HoneyBook owns its embedded form styles; keep the host column responsive. */
+.honeybook-inquiry { min-width: 0; width: 100%; }
+.honeybook-inquiry iframe { max-width: 100%; border: 0; }
+.honeybook-inquiry > p { color: var(--muted); line-height: 1.65; }
+.honeybook-inquiry [role="alert"] { color: #8b2424; }
