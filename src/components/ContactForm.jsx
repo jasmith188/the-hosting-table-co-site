@@ -20,35 +20,16 @@ export default function ContactForm() {
   return (
     <section className="contact-section section-wrap" id="contact">
       <div className="contact-copy">
-        <p className="eyebrow">Inquire</p>
+        <p className="eyebrow">An invitation to the table</p>
         <h2>Plan your private chef experience.</h2>
         <p>
-          Share your event date, guest count, location, and the style of dinner you have in mind.
-          Chef Jimmy will follow up directly to customize the menu and quote.
+          A special evening, a weekend together, or dinner taken care of.
+          Share a few details below, and I’ll be in touch to plan a menu around you.
         </p>
-        <div className="direct-contact-card">
-          <strong>Prefer to reach out directly?</strong>
-          <a href="tel:+15403108358">Call or text 540-310-8358</a>
+        <div className="inquiry-contact-links" aria-label="Contact Chef Jimmy directly">
+          <a href="tel:+15403108358">540-310-8358</a>
+          <span aria-hidden="true">/</span>
           <a href="mailto:booking@thehostingtableco.com">booking@thehostingtableco.com</a>
-        </div>
-         <div className="direct-contact-card payment-card">
-          <strong>Optional Gratuities</strong>
-
-          <a
-            href="https://donate.stripe.com/6oUfZj9k8ese4WBbFE3wQ01"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Leave a Gratuity 
-          </a>
-
-          {/* <p><strong>Zelle:</strong> jimmy@thehostingtableco.com</p> */}
-
-          {/* <p><strong>Venmo:</strong> @jasmith188</p> */}
-
-          <small>
-            Thank you for supporting The Hosting Table Co. Event deposits and balances are arranged by invoice.
-          </small>
         </div>
       </div>
 
@@ -62,8 +43,14 @@ export default function ContactForm() {
           alt=""
         />
         {error && <p role="alert">The inquiry form could not load. Please call or text 540-310-8358, or email booking@thehostingtableco.com.</p>}
-        <p>Your date is reserved with a 50% deposit after the menu and quote are confirmed.</p>
+        <div className="inquiry-booking-note">
+          <span className="eyebrow">Made for your table</span>
+          <p>Your date is reserved with a 50% deposit after the menu and quote are confirmed.</p>
+        </div>
       </div>
+      <p className="inquiry-gratuity">
+        Already joined us at the table? <a href="https://donate.stripe.com/6oUfZj9k8ese4WBbFE3wQ01" target="_blank" rel="noopener noreferrer">Leave an optional gratuity</a>
+      </p>
     </section>
   );
 }
